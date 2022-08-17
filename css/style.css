@@ -8,12 +8,12 @@ body {
 }
 @font-face {
   font-family: organetto;
-  src: url(/fonts/organetto/Fontspring-DEMO-organetto-regular.otf);
+  src: url(../fonts/organetto/Fontspring-DEMO-organetto-regular.otf);
   font-weight: regular;
 }
 @font-face {
   font-family: organetto;
-  src: url(/fonts/organetto/Fontspring-DEMO-organetto-bold.otf);
+  src: url(../fonts/organetto/Fontspring-DEMO-organetto-bold.otf);
   font-weight: bold;
 }
 h1,
