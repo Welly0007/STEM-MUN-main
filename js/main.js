@@ -113,7 +113,7 @@ const toggle = document.getElementById('toggleDark');
                         });
                     }
                 for (let i = 0; i < team.length; i++){
-                    team[i].style.background = '#000';
+                    team[i].style.background = '#10161a';
                     team[i].style.color = '#fff';
                     team[i].addEventListener("mouseenter", function(){
                         teamspan[i].style.color = '#fff';
