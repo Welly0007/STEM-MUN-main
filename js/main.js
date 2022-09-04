@@ -59,6 +59,7 @@ $(window).on('load',function(){$("#preloader").fadeOut();});$('body').scrollspy(
         var abouthov = document.querySelectorAll('.abouthov');
         var team = document.querySelectorAll('.team')
         var arrowTeam = document.querySelectorAll('.arrow')
+        var teamspan = document.querySelectorAll('.teamspan')
         var counterTeam = document.querySelector('.counter')
         var footer = document.querySelector('footer')
 const toggle = document.getElementById('toggleDark');
@@ -114,6 +115,12 @@ const toggle = document.getElementById('toggleDark');
                 for (let i = 0; i < team.length; i++){
                     team[i].style.background = '#000';
                     team[i].style.color = '#fff';
+                    team[i].addEventListener("mouseenter", function(){
+                        teamspan[i].style.color = '#fff';
+                    });
+                    team[i].addEventListener("mouseleave", function(){
+                        teamspan[i].style.color = '#fff';
+                    });         
                 }
                 for (let i = 0; i < arrowTeam.length; i++){
                     arrowTeam[i].style.color = '#fff';
@@ -169,6 +176,12 @@ const toggle = document.getElementById('toggleDark');
                 for (let i = 0; i < team.length; i++){
                     team[i].style.background = '#f4f4f4';
                     team[i].style.color = '#10161a';
+                    team[i].addEventListener("mouseenter", function(){
+                        teamspan[i].style.color = '#fff';
+                    });
+                    team[i].addEventListener("mouseleave", function(){
+                        teamspan[i].style.color = '#10161a';
+                    });                    
                 }
                 for (let i = 0; i < arrowTeam.length; i++){
                     arrowTeam[i].style.color = '#10161a';
