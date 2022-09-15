@@ -16,6 +16,11 @@ body {
   src: url(../fonts/organetto/Fontspring-DEMO-organetto-bold.otf);
   font-weight: bold;
 }
+@font-face {
+  font-family: bigjohn;
+  src: url(../fonts/john/john.otf);
+  font-weight: regular;
+}
 h1,
 h2,
 h3,
@@ -111,23 +116,29 @@ ol {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   opacity: 1;
   text-align: left;
-  padding: 10% 5%;
-
+  justify-content: center;
+  padding: 300px 5% 0;
   width: 100%;
   height: 100vh;
-  margin-bottom: 100px;
+  
+}
+.flex-container-build{
+  opacity: 1;
+  margin: 200px 0;
+  height: 100vh;
+  
 }
 #typedtext{
   color: #fff;
   opacity: 1;
-  font-size: 42pt;
-  height: 200px;
+  font-size: 40pt;
+  height:300px;
   overflow: hidden;
-  width: max-content;
   cursor:default;
+  text-transform: uppercase;
 }
 .test{
   padding: 500px;
@@ -136,20 +147,24 @@ a{
   width: fit-content;
 }
 #become_delegate_butt{
-  font: var(--font-weight-bold) 14pt var(--inter-font-family);
+  font-size: 18px;
   width: fit-content;
   height: fit-content;
+  background-color: transparent;
   padding: 10px;
-  background-color: #6195ff;
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
-  border: none;
+  border: 2px solid white;
+  transition: 0.5s ease-in-out;
+}
+#become_delegate_butt:hover{
+  background-color: #141518;
 }
 /* --  background image section  -- */
 
 .bg-img {
-  background-image: url("../img/background1.jpg");
+  background-image: url("../img/lab2.jpg");
   position: absolute;
   left: 0;
   top: 0;
@@ -605,18 +620,25 @@ header{
   height:fit-content;
   width: 100%;
   padding: 5px 5%;
-  background-color: #dddddd;
+  background-color: #fff;
   z-index: 999;
   display: flex;
   top: 0px;
   justify-content: space-between;
   align-items: center;
   transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
-
+#logo a{
+  font-size: 20px;
+  text-transform: uppercase;
+}
 #logo-img{
-  height: 67px;
+  height: auto;
   width: 80px;
+  margin-right: 10px;
 }
 nav{
   display: inline-flex;
@@ -661,7 +683,6 @@ nav{
   border: none;
   color: black;
   margin-top: -12px;
-  margin-right: 5%;
 }
 
 
@@ -671,8 +692,9 @@ nav{
     padding: 5px 5%;
   }
   #logo-img{
-    height: 50px;
+    height: auto;
     width: 60px;
+
   }
   nav{
     display: flex;
@@ -743,12 +765,7 @@ height: 0px;
     
   }
 }
-@media only screen and (max-width: 767px) {
-  .flex-container {
-    height: 100vh;
-    padding-top:100px;
-  }
-}
+
 /*------------------------------------*\
 	About
 \*------------------------------------*/
@@ -797,7 +814,47 @@ height: 0px;
 /*------------------------------------*\
 	Portfolio
 \*------------------------------------*/
+.capa{
+  background-color: #6195ff;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  font-family: bigjohn;
+  padding: 50px 25%;
+  width: 100%;
+  margin-bottom: 100px;
 
+}.capa h5{
+  color: #fff;
+  margin-bottom: 0;
+}
+.capa-intro{
+
+  width: 350px;
+  text-transform: uppercase;
+  margin:0 10% 0  0 ;
+}
+.capa-intro h5{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.capa-intro span{
+  color: #FF4040;
+}
+.capa-services{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 80px;
+}
+.fab-service img{
+  width: auto;
+  height: 150px;
+  margin-bottom: 5px;
+}
+.fab-service{
+text-align: center;
+}
 .work {
   position: relative;
   padding: 20px;
@@ -1713,22 +1770,65 @@ font-size: 40px;
 
 @media only screen and (max-width: 1110px) {
   #typedtext{
-    font-size: 26pt;
-    height: 130px;
+    font-size: 32pt;
+    height: 200px;
     
 }
+.capa{
+  padding: 50px 5%;
+}
+.capa-intro{
+
+  width: 250px;
+}
+.capa-intro h5{
+  font-size: 30px;
+}
+.capa-services{
+  gap: 50px;
+}
+.fab-service img{
+  width: auto;
+  height: 100px;
+  margin-bottom: 5px;
+}
 #become_delegate_butt{
-  font-size: 10pt;
-  padding: 8px;
+  font-size: 14px;
 }
 }
 @media only screen and (max-width:767px) {
   #typedtext{
-    font-size: 16pt;
-    height: 85px;
+    font-size: 20pt;
+    height: 150px;
+}
+.capa{
+  padding: 50px 5%;
+  flex-direction:column;
+}
+.capa-intro{
+  font-size: 15px;
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto 30px;
+}
+.capa-intro h5{
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.capa-services{
+  grid-template-columns:auto auto auto auto;
+  gap: 40px;
+}
+.fab-service img{
+  width: auto;
+  height: 70px;
+  margin-bottom: 5px;
 }
 #become_delegate_butt{
-  font-size: 8pt;
+  font-size: 10px;
+  padding: 2px;
 }
 }
 @media only screen and (max-width: 767px) {
@@ -1989,3 +2089,15 @@ font-size: 40px;
     transform: scale(0);
   }
 }
+/* Start glimpse page */
+.season_butt{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  flex-wrap: wrap;
+}
+.Season{
+  margin-top: 20px;
+}
+/* ENd glimpse page */
+
