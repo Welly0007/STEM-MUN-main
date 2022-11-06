@@ -33,7 +33,6 @@ if(queryTwo.matches){
                 { $zIndex: 2, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
                 { $zIndex: 1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
                 { $zIndex: 0, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                { $zIndex: -1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
             ];
     
             var $lis = $ele.find('li');
@@ -146,7 +145,7 @@ if(queryTwo.matches){
                     { $zIndex: 2, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
                     { $zIndex: 1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
                     { $zIndex: 0, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                    { $zIndex: -1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
+
                 ];
 
                 var $lis = $ele.find('li');
@@ -258,7 +257,7 @@ if(queryTwo.matches){
                     { $zIndex: 2, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
                     { $zIndex: 1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
                     { $zIndex: 0, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
-                    { $zIndex: -1, width: 0, height: 0, top: 79, left: 700, $opacity: 0 },
+
 
                 ];
                 var $lis = $ele.find('li');
