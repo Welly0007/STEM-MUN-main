@@ -140,7 +140,6 @@ const toggle = document.getElementById('toggleDark');
                 document.querySelector('body').style.background = '#fff'; 
                 document.querySelector('body').style.color = '#555a61'; 
                 document.querySelector('header').style.background = '#dddddd';
-                document.querySelector('#become_delegate_butt').style.background = '#6195ff'; 
                 counterTeam.style.color = '#10161a'
 
                 for (let i = 0; i < h2Clr.length; i++){
