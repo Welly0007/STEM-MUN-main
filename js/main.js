@@ -81,7 +81,6 @@ const toggle = document.getElementById('toggleDark');
                 document.querySelector('body').style.background = '#1c1d21';
                 document.querySelector('body').style.color = '#868f9b';
                 document.querySelector('header').style.background = '#000';
-                document.querySelector('#become_delegate_butt').style.background = '#1c1d21'; 
                 counterTeam.style.color = '#fff'
                 for (let i = 0; i < h2Clr.length; i++){
                     h2Clr[i].style.color = '#fff';
@@ -131,7 +130,6 @@ const toggle = document.getElementById('toggleDark');
 
                 document.querySelector('body').style.transition = '.8s ease-in-out';
                 document.querySelector('header').style.transition = '.8s ease-in-out';
-                document.querySelector('#become_delegate_butt').style.transition = '.8s ease-in-out';
                 toggle.style.color = '#fff';
                 
                 choice = false;
