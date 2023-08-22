@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <meta
+      description="Model United Nations is a Global Student
+    Activity that gained Popularity among thousands of
+    students from universities and high schools all
+    around the globe. Students get the opportunity to
+    experience the role of UN representatives, and run
+    a simulation for a typical UN conference. An MUN
+    conference is centered on a specified topic: a war,
+    conflict, famine, or humanitarian crisis somewhere
+    in the world. The topic is related to different parties
+    and countries. Accordingly, the topic is discussed
+    throughout the conference by delegates-the
+    representatives assigned for a specific country,
+    who talks from its perspective-. Throughout the
+    season, delegates engage in debates, academic
+    support sessions, and various activities that
+    contribute to enhancing social, academic, and intellectual skills."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round"
+      rel="stylesheet"
+    />
+    
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="icon.ico" />
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            text-align: left;
+            padding: 15% 5% 5% 5%;
+            width: 100%;
+            height: auto;
+            margin-bottom: 0;
+            background-color: #7ea3e5;
+            color: white;
+            text-align: center;
+        }
+        .flex-container h1 {
+            margin: 1rem;
+        }
+        .flex-container p {
+            font-size: 2rem;
+        }
+        .highboard {
+            padding: 2rem;
+        }
+        .shelf{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 3.5rem 0;
+        }
+        .highboard h2 {
+            text-align: center;
+            margin: 1.5rem;
+            position: relative;
+        }
+        .highboard h2 span {
+            font-size: 75%;
+            position: absolute;
+            left: -135px;
+            top: -22px;
+            width: 100%;
+            height: 100%;
+            color: #dbdada;
+        }
+        .profile-card{
+            background-image: url('img/earth-loader.gif');
+            background-position: center;
+            position: relative;
+            width: 240px;
+            height: 240px;
+            background-color: #6495ed42;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+            transition: all .4s;
+            margin: 4rem 1.5rem;
+        }
+        .profile-card:hover{
+            border-radius: 10px;
+            height: 260px;
+        }
+        .profile-card .img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .profile-card:hover img{
+            border-radius: 10px;
+            transform: translateY(-80px);
+        }
+        .img img{
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            transition: all .4s;
+            z-index: 99;
+        }
+        .caption{
+            text-align: center;
+            transform: translateY(-80px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .5s;
+            color: #fff !important;
+        }
+        .profile-card:hover .caption{
+            opacity: 1;
+            pointer-events: all;
+            padding-top: 1rem;
+        }
+        .caption h3{
+            font-size: 19px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .caption p{
+            font-size: 12px;
+            font-weight: 500;
+            margin: 2px 0 12px 0;
+        }
+        .caption .social-links i{
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+            color: #333;
+            transition: all .4s;
+        }
+        .caption .social-links i:hover{
+            color: #0c52a1;
+        }
+        @media only screen and (max-width: 567px) {
+            .flex-container h1 {
+                font-size: 3.5rem;
+                margin: 1.5rem;
+            }
+            .flex-container p {
+            font-size: 1.5rem;
+        }
+            .highboard h2 span {
+                font-size: 65%;
+                position: absolute;
+                left: -30px;
+                top: -22px;
+                width: 100%;
+                height: 100%;
+                color: #e3e3e3e8;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <nav id="nav" class="navbar nav">
+            <div class="navbar-header">
+                <div id="svg-icon" class="navbar-brand">
+                    <a href="index.html">
+                        <img  class="logo" src="img/logo.svg" alt="logo" />
+                    </a>
+                </div>
+  
+  
+            </div>
+  
+            <div class="nav-collapse">
+              <span></span>
+          </div>
+  
+            <ul class="main-nav nav navbar-nav navbar-right">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">Letter from the Secretary</a></li>
+                <li><a href="index.html#about2">About</a></li>
+                <li><a href="index.html#portfolio">Main objectives</a></li>
+                <li><a href="index.html#pricing">Glimpse from the past</a></li>
+                <li><a href="index.html#Vision">Vision</a></li>
+                <li><a href="Team.html">Meet The Board</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <!-- <li><a class="active" id="cta" href="apply.html">Apply</a></li> -->
+            </ul>
+        </nav>
+  
+      </header> 
+      <div class="flex-container">
+        <h1>Meet our Best Team</h1>
+        <p>"Uniting Passion, Knowledge, and Diplomacy for Global Impact"</p>
+      </div> 
+  <div class="highboard">
+    <h2><span>Guiding with Vision</span>Management Board</h2>
+    <div class="shelf">
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Mohamed Hassan President.jpg">
+          </div>
+          <div class="caption">
+              <h3>Mohamed Hassan</h3>
+              <p>President</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100012449494010" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:mohammedbinhaassan@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Nasser Vice-President.jpeg">
+          </div>
+          <div class="caption">
+              <h3>Mohamed Nasser</h3>
+              <p>Vice President</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100016776516416" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:moh.elshiehk@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Abbas Secretary.jpg">
+          </div>
+          <div class="caption">
+              <h3>Youssef Abbas</h3>
+              <p>Vice President</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/youssefabbas297?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:youssef.abbas555@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+            <img src="img/members/Ahmed Abdelkader Vice-President.jpg">
+        </div>
+        <div class="caption">
+            <h3>Ahmed Abdelkader</h3>
+            <p>Secretary</p>
+            <div class="social-links">
+                  <a href="https://www.facebook.com/ahmed.mohamedabdalkader.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:ahmedmohamedabdalkader7@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <h2><span>Connecting Voices Harmoniously</span>Humar Resources & Public Relations</h2>
+    <div class="shelf">
+          <div class="profile-card">
+              <div class="img">
+                  <img src="img/members/Roshan Mohamed HR Co-Head.jpeg">
+              </div>
+              <div class="caption">
+                  <h3>Roshan Mohamed</h3>
+                  <p>Co-Head of Human Resources</p>
+                  <div class="social-links">
+                  <a href="https://www.facebook.com/roshy.snosy.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:roshanmohamed399@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="profile-card">
+              <div class="img">
+                  <img src="img/members/Fatma Sherif HR Co-Head.jpg">
+              </div>
+              <div class="caption">
+                <h3>Fatma Sherif</h3>
+                <p>Co-Head of Human Resources</p>
+                  <div class="social-links">
+                  <a href="https://www.facebook.com/fatma.sherif.946" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:fatmasherif183@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="profile-card">
+              <div class="img">
+                  <img src="img/members/Amir Vice-Head HR.jpg">
+              </div>
+              <div class="caption">
+                  <h3>Mohamed Amir</h3>
+                  <p>Vice Head of Human Resources</p>
+                  <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100049193753470" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:mo2620050@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="profile-card">
+            <div class="img">
+                <img src="img/members/Jamila Hagag PR Vice-Head.jpg">
+            </div>
+            <div class="caption">
+                <h3>Jamila Haggag</h3>
+                <p>Head of Public Relations</p>
+                <div class="social-links">
+                <a href="https://www.facebook.com/gamila.haggag?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:jamila.1121513@stemmaadi.moe.edu.eg" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2><span>Efficiency in Execution</span>Logistics</h2>
+    <div class="shelf">
+        <div class="profile-card">
+            <div class="img">
+                <img src="img/members/Abdallah Yasser Logistics Head.jpg">
+            </div>
+            <div class="caption">
+                <h3>Abdallah Yasser</h3>
+                <p>Head of Logisitics</p>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100077312206984&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:abdallahyasser815@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="img/members/Hana Alaà Logisitics Vice-Head.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Hana Alaa</h3>
+                <p>Vice Head of Logistics</p>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/hana.alaa.1614460?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:hana.elfallal412@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="img/members/Hazem Waleed Vice head logistics.jpg">
+            </div>
+            <div class="caption">
+                <h3>Hazem Walid</h3>
+                <p>Vice Head of Logisitics</p>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100007695258833&mibextid=9R9pXO" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:hazemwaleednasr4@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2><span>Words Shape Worlds</span>Content Writing</h2>
+    <div class="shelf">
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Mina Ashraf Co-Head of content writing.jpg">
+          </div>
+          <div class="caption">
+              <h3>Mina Ashraf</h3>
+              <p>Co-Head of Content Writing</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100060873864813" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:ashrafmina773@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Youssef Gamal Co-head content writing.jpg">
+          </div>
+          <div class="caption">
+              <h3>Youssef Gamal</h3>
+              <p>Co-Head of Content Writing</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100049783240065" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:youssef.1021135@stemegypt.edu.eg" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Ziad Ahmed Vice-head of content writing.JPG">
+          </div>
+          <div class="caption">
+              <h3>Ziad Ahmed</h3>
+              <p>Vice Head of Content Writing</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100007039861561" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:ziadahmed200617@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <h2><span>Nurturing Delegate Potential</span>Academics</h2>
+    <div class="shelf">
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Salma Elgendy Head of Academics.jpg">
+          </div>
+          <div class="caption">
+              <h3>Salma Shakir</h3>
+              <p>Head of Academics</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/salma.elgendy.712?mibextid=2JQ9oc" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:Salmashakir392008@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Ammar Vice-Head academics.jpg">
+          </div>
+          <div class="caption">
+              <h3>Ammar Yasser</h3>
+              <p>Vice Head of Academics</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100078476580164" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:csrm1352006@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <h2><span>Tech Empowers Connection</span>Information Technology</h2>
+    <div class="shelf">
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Abdelhamid Ahmed C-Head IT.jpg">
+          </div>
+          <div class="caption">
+              <h3>Abdelhamid Ahmed</h3>
+              <p>Co-Head of IT & Website Manager</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/abdelhamid.alrashidy" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:abdelhamidofficial2005@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Mohamed Ghoname Co-head of IT.jpg">
+          </div>
+          <div class="caption">
+              <h3>Mohamed Omar</h3>
+              <p>Co-Head of IT</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/mohammed.ghoname.12?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:mohamed.ghoname314@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <h2><span>Visualizing Ideas Vibrantly</span>Graphic Design</h2>
+    <div class="shelf">
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Ebram Head of graphic and Web design.jpg">
+          </div>
+          <div class="caption">
+              <h3>Abram Antonius</h3>
+              <p>Head of Graphic & Web Design</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/abram.antoun?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:ebramanton012@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Abdelhakim Yasser Vice of Graphic design.jpg">
+          </div>
+          <div class="caption">
+              <h3>Abdelhakim Yasser</h3>
+              <p>Vice Head of Graphic Design</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/soul.abdelhakimo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:abdelhakimyassere@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <h2><span>Frames of Influence</span>Video Editing</h2>
+    <div class="shelf">
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Omar Elwakeel Co-head of video editing.jpeg">
+          </div>
+          <div class="caption">
+              <h3>Omar El-Wakeel</h3>
+              <p>Co-Head of Video Editing</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/omar.elwakeel.9" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:omarelwakeel66@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Ahmed Mohamed Abdeltwab Co-head Video editing.jpg">
+          </div>
+          <div class="caption">
+              <h3>Ahmed Abdeltawab</h3>
+              <p>Co-Head of Video Editing</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100003687844716" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:atawab2006@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <h2><span>Strategize, Attract, Inspire</span>Marketing</h2>
+    <div class="shelf">
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Mohamed Emad Head of Marketing.jpg">
+          </div>
+          <div class="caption">
+              <h3>Mohamed Emad</h3>
+              <p>Head of Marketing</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100009512117295" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:realmohamedemad@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+          <div class="img">
+              <img src="img/members/Osheen Fathy Vice-Head of Marketing.jpeg">
+          </div>
+          <div class="caption">
+              <h3>Engy Fathy</h3>
+              <p>Vice Head of Marketing</p>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100008869215971&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:engy.1622508@stemredsea.moe.edu.eg" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+        <!-- preloader -->
+        <div id="preloader">
+            <img src="img/earth2-loader.gif" alt="">
+            <h1>Welcome, STEM Modal United Nation</h1>
+          </div>
+                <!-- preloader end -->
+        <script src="jss/compressed.js"></script>
+        <script
+          type="24b860a394b1c499bd546738-text/javascript"
+          src="js/jquery.min.js"
+        ></script>
+        <script
+          type="24b860a394b1c499bd546738-text/javascript"
+          src="js/bootstrap.min.js"
+        ></script>
+        <script
+          type="24b860a394b1c499bd546738-text/javascript"
+          src="js/owl.carousel.min.js"
+        ></script>
+        <script
+          type="24b860a394b1c499bd546738-text/javascript"
+          src="js/jquery.magnific-popup.js"
+        ></script>
+        <script
+          type="24b860a394b1c499bd546738-text/javascript"
+          src="js/main.js"
+        ></script>
+        <script
+          src="js/rocket-loader.min.js"
+          data-cf-settings="24b860a394b1c499bd546738-|49"
+          defer=""
+        ></script>
+        
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+</body>
+</html>

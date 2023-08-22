@@ -89,6 +89,7 @@ ol {
   list-style: none;
 }
 
+
 /* -- section  -- */
 
 .section {
@@ -297,12 +298,17 @@ textarea:focus {
 \*------------------------------------*/
 
 #nav {
-  padding: 10px 0px;
-  background: #fff;
+  padding: 1.6rem 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 999;
-  position: fixed;
   top: 0;
   width: 100%;
+}
+
+header .navbar-brand {
+  height: auto;
 }
 
 #nav.navbar {
@@ -340,16 +346,16 @@ textarea:focus {
     color: #10161a;
     padding: 15px 0px;
   }
-  #nav.nav-transparent:not(.fixed-nav) .main-nav > li > a {
+  #nav.nav-transparent:not(.fixed-nav) .nav > li > a {
     color: #fff;
   }
-  .main-nav > li > a:hover,
-  .main-nav > li > a:focus,
-  .main-nav > li.active > a {
+  .nav > li > a:hover,
+  .nav > li > a:focus,
+  .nav > li.active > a {
     background: transparent;
     color: #6195ff;
   }
-  .main-nav > li > a:after {
+  .nav > li > a:after {
     content: "";
     display: block;
     background-color: #6195ff;
@@ -358,7 +364,7 @@ textarea:focus {
     -webkit-transition: 0.5s width;
     transition: 0.5s width;
   }
-  .main-nav > li > a:hover:after{
+  .nav > li > a:hover:after{
     width: 100%;
   }
   /* dropdown */
@@ -438,6 +444,8 @@ textarea:focus {
   .main-nav {
     position: fixed;
     right: 0;
+    top: 0;
+    padding-top: 7.5rem;
     height: calc(100vh - 80px);
     -webkit-box-shadow: 0px 80px 0px 0px #1c1d21;
     box-shadow: 0px 80px 0px 0px #1c1d21;
@@ -543,7 +551,7 @@ textarea:focus {
 .nav-collapse span:before,
 .nav-collapse span:after {
   height: 4px;
-  background: #10161a;
+  background: #6195ff;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
@@ -605,13 +613,14 @@ header{
   height:fit-content;
   width: 100%;
   padding: 5px 5%;
-  background-color: #dddddd;
+  background: #fff;
   z-index: 999;
   display: flex;
   top: 0px;
   justify-content: space-between;
   align-items: center;
   transition: 0.5s ease-in-out;
+  box-shadow: 0 0.5px 4px 0px black;
 }
 
 #logo-img{
@@ -625,6 +634,9 @@ nav{
   text-transform: uppercase;
   font: bold 10pt organetto;
   cursor: default;
+}
+.nav::after, .nav::before {
+  display: none !important;
 }
 .nav-butt a{
   margin-right: 20px;
@@ -1664,6 +1676,8 @@ font-size: 40px;
 #footer {
   position: relative;
   background: #1c1d21;
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo {
@@ -1702,6 +1716,9 @@ font-size: 40px;
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
+}
+.footer-links {
+  display: flex;
 }
 
 #about h2 {
@@ -1761,13 +1778,22 @@ font-size: 40px;
     float: none;
     text-align: center;
   }
+  #footer {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   #portfolio [class*="col-xs"] {
     width: 100%;
   }
+  #preloader h1 {
+    font-size: 1.5rem;
+  }
 
+  .footer-links {
+    flex-direction: column;
+  }
   #numbers [class*="col-xs"] {
     width: 100%;
   }
@@ -1807,6 +1833,7 @@ font-size: 40px;
   .blog-comments .media .media {
     margin: 0px -15px;
   }
+
 }
 
 /*------------------------------------*\
@@ -1915,77 +1942,58 @@ font-size: 40px;
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: #fff;
+  background-color: #ffffffde;
   z-index: 99999;
+  height: 100vh;
+  width: 100%;
 }
-
-.preloader {
+#preloader img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  margin: 0;
+}
+#preloader h1 {
   position: absolute;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  color: #1f8b8f;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 75%;
+  transform: translateX(-50%);
 }
-.preloader span {
+
+.dark-toggle {
   display: inline-block;
-  background-color: #6195ff;
-  width: 25px;
-  height: 25px;
-  -webkit-animation: 1s preload ease-in-out infinite;
-  animation: preload 1s ease-in-out infinite;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.icon {
+  display: none; /* Hide both icons by default */
 }
 
-.preloader span:nth-child(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
+/* Additional styles can be added here */
+
+.dark-mode .dark-toggle .moon-icon {
+  display: inline-block; /* Show moon icon in dark mode */
+  /* Additional styles for the moon icon in dark mode */
 }
 
-.preloader span:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+/* Additional styles can be added here */
+
+.light-mode .dark-toggle .sun-icon {
+  display: inline-block; /* Show sun icon in light mode */
+  /* Additional styles for the sun icon in light mode */
 }
 
-.preloader span:nth-child(3) {
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
 
-.preloader span:nth-child(4) {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
 
-@-webkit-keyframes preload {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  50% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-}
 
-@keyframes preload {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  50% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
+/* General edits */
+.text-center {
+  margin: auto;
+  width: fit-content;
 }
