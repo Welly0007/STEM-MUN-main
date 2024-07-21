@@ -238,38 +238,60 @@
                 <li><a href="index.html#portfolio">Main objectives</a></li>
                 <li><a href="index.html#pricing">Glimpse from the past</a></li>
                 <li><a href="index.html#Vision">Vision</a></li>
-                <li><a href="competition.html">Competition</a></li>
+                <li><a href="competition.html" style="color: #6195ff;">Competition</a></li>
                 <li><a href="Team.html">Meet The Board</a></li>
-                <li><a href="contact.html" style="color: #6195ff;">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <!-- <li><a class="active" id="cta" href="apply.html">Apply</a></li> -->
             </ul>
         </nav>
 
     </header>
     <div class="flex-container">
-        <h1>Contact Us for more information</h1>
-        <p>"If you have any suggestion, inquiry, or complaint, don't hesitate to tell us"</p>
+        <h1>MUN Writing Challenge 2024</h1>
+        <p>We are thrilled to announce the "MUN Writing Challenge 2024," the first Egyptian articles competition
+            organized by high schoolers to open its doors to participants from around the world. This mind-blowing event
+            invites young minds globally to engage in thoughtful writing and contribute their perspectives on some of
+            the most critical issues facing our society today.
+            Don't hesitate to join our fascinating event, and to put your voice to be a part of the change </p>
     </div>
     <div class="highboard">
-        <h2><span>Fill in the exact details carefully</span>Fill out this form</h2>
     </div>
     <form style="margin: 0 20%;">
-        <label for="name">Name:</label>
+        <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required class="text"><br><br>
-        <label for="email">Email:</label>
+        <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" required class="text"><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="30" required class="text"></textarea><br><br>
-        <input type="submit" value="Send" class="send">
+        <label for="Country">Your Country:</label>
+        <input type="text" id="Country" name="Country" required class="text"><br><br>
+        <label for="Phone">Your Phone:</label>
+        <input type="text" id="Phone" name="Phone" required class="text"><br><br>
+        <label for="prompt1"> Quality education is a privilege not everyone has access to. In your article, discuss the
+            challenges in providing quality education for all and explore successful new strategies that address
+            these challenges.</label><br>
+        <textarea id="prompt1" name="prompt1" rows="5" cols="30" required class="text"></textarea><br><br>
+        <label for="prompt2"> The Path to Mental Health Awareness: How Can We Foster a Culture of Openness and Support
+            Around Mental Health in Our Communities?
+            Discuss the prevalence of mental disorders, causes, and impacts on individuals and societies.</label><br>
+        <textarea id="prompt2" name="prompt2" rows="5" cols="30" required class="text"></textarea><br><br>
+        <label for="prompt3">"Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+            incorrectly and applying the wrong remedies." - Groucho Marx
+            Choose one pressing political issue, discuss how did it arise, underlying causes, and potential influences
+            on the socioeconomic growth, wellbeing of individuals, and sustainability of development.</label><br>
+        <textarea id="prompt3" name="prompt3" rows="5" cols="30" required class="text"></textarea><br><br>
+        <input type="submit" value="Share Your Voice" class="send">
     </form>
     <script>
         document.querySelector(".send").addEventListener("click", function (event) {
             event.preventDefault();
             const name = document.querySelector("#name").value;
             const email = document.querySelector("#email").value;
-            const message = document.querySelector("#message").value;
-            const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfIPRjUwoHrSb-KykM56Gp2zPqICUWGC83JyPdU0i2LAi_A4w/formResponse";
-            const formData = { 1219015210: message, 1897106222: name, 717754776: email };
+            const country = document.querySelector("#Country").value;
+            const phone = document.querySelector("#Phone").value;
+            const prompt1 = document.querySelector("#prompt1").value;
+            const prompt2 = document.querySelector("#prompt2").value;
+            const prompt3 = document.querySelector("#prompt3").value;
+            const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdGdXMAcBKxiZC7iwn7nrAA60-qYRc0yxeY945aq8gDliHZbA/formResponse";
+            const formData = { 1631786627: prompt1, 123620020: name, 1490698635: email, 218283730: phone, 1308134423: prompt2, 897641835: country, 2031969761: prompt3 };
             const data = new URLSearchParams();
             for (const entry in formData) {
                 if (Object.hasOwnProperty.call(formData, entry)) {
@@ -278,7 +300,7 @@
                 }
             }
             console.log(data);
-            
+
             try {
                 fetch(formUrl, {
                     method: "POST", body: data, headers: {
