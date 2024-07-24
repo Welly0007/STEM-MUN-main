@@ -1,7 +1,7 @@
 $(window).on('load', function() {
     setTimeout(function() {
       $("#preloader").fadeOut();
-    }, 100); // 5000 milliseconds = 5 seconds
+    }, 2000); // 5000 milliseconds = 5 seconds
   });
 
 (function($){"use strict"
@@ -43,6 +43,10 @@ $('body').scrollspy({target:'#nav',offset:$(window).height()/2});$("#nav .main-n
           setTimeout("typewriter()", iSpeed);
          }
         };
+        
+
+        
+
         window.addEventListener("load", function(){
             typewriter();
         });
