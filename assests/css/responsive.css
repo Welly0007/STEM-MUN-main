@@ -1,0 +1,1436 @@
+
+
+@media only screen and (max-width: 767px) {
+    body,
+    html {
+        overflow-x: hidden !important;
+    }
+    .tel-link {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+    /* Header */
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    #home {
+        background-image: url(../images/home_bg_mobile.svg);
+    }
+    .logo {
+        width: 20vw;
+        top: 2rem;
+        left: 2rem;
+    }
+    .burger {
+        display: flex;
+    }
+    header nav {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 100%;
+        background-color: #011D52;
+        padding: 8rem 2rem 2rem 2rem;
+        transition: all 0.25s ease;
+    }
+    header nav.open {
+        right: 0;
+    }
+    header nav ul li a,
+    .wpml-ls-legacy-list-horizontal a {
+        font-size: 3rem;
+    }
+    header nav ul.lang,
+    .wpml-ls-legacy-list-horizontal {
+        margin-bottom: 2rem;
+    }
+    header.sticky .logo {
+        opacity: 0;
+    }
+    header.sticky .book_a_demo {
+        opacity: 0 !important;
+    }
+    /*.fp-section, .fp-slide, .fp-tableCell { height: auto !important; }*/
+    .iScrollVerticalScrollbar.iScrollLoneScrollbar {
+        display: none;
+    }
+    /* Footer */
+    footer .desktop {
+        display: none;
+    }
+    footer .mobile {
+        display: block;
+    }
+    footer {
+        background-image: url('../images/footer_bg_mobile.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem;
+        text-align: center;
+    }
+    footer .logo_footer {
+        width: 25%;
+        margin: 2rem 0;
+    }
+    .social a {
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+    footer nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+    footer nav {
+        margin: 1rem 0;
+    }
+    footer nav ul li {
+        display: inline-flex;
+        padding-left: 0;
+        padding: .5rem;
+    }
+    footer nav ul li a {
+        font-size: 1rem;
+    }
+    footer .powered {
+        font-size: 1rem;
+        display: block;
+    }
+    /* home */
+    .hero_phone {
+        width: 90%;
+        height: auto;
+        margin-top: -25vw;
+    }
+    .hero_scroll {
+        display: none;
+    }
+    .book_a_demo {
+        font-size: 1.25rem;
+        bottom: 2rem;
+        right: 2rem;
+    }
+    h1 {
+        font-size: 19vw;
+        line-height: 1;
+        bottom: 45vw;
+        left: 1rem;
+    }
+    h1 span.slogan {
+        font-size: 2rem;
+    }
+    /* About */
+    h2 {
+        font-size: 3rem;
+        left: 2rem;
+        top: 2rem;
+    }
+    .whatisit_slider_content {
+        width: 100vw;
+    }
+    .whatisit_slider_content .foam {
+        width: 55vw;
+        left: 10vw;
+        margin-top: inherit;
+        margin-left: inherit;
+        margin-bottom: -10vw;
+    }
+    .whatisit_slider_content .iphone {
+        width: 40vw;
+        margin-right: inherit;
+        margin-bottom: -10vw;
+        right: 10vw;
+    }
+    .whatisit_slider_content .slider_text {
+        font-size: 2rem;
+        width: 75vw;
+        margin-bottom: -2rem;
+    }
+    .whatisit_slider_content .slider_text_back {
+        font-size: 6rem;
+        bottom: 25vw;
+        left: 2rem;
+        width: 100vw;
+    }
+    .num_content {
+        padding: 0 2rem;
+        font-size: 3rem;
+    }
+    .whatisit_slider_content .carres {
+        width: 100vw;
+        max-width: inherit;
+    }
+    .whatisit_slider_content .casquette {
+        width: 100%;
+    }
+    /*.whatisit_slider_num { display: none; }*/
+    /* SMS JUST WORS */
+    .stats-wrapper {
+        width: 100%;
+        padding: 12rem 2rem 2rem 2rem;
+    }
+    .aStats1,
+    .aStats2,
+    .aStats3,
+    .aStats4 {
+        margin: inherit;
+        margin: auto;
+        width: 100%;
+    }
+    #whereitworks {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 2rem;
+    }
+    .source {
+        position: static;
+        font-size: 1rem;
+    }
+    /* WHY SMS IS BETTER */
+    .whysms_text_back {
+        top: 50vw;
+    }
+    #whysms .fp-scroller {
+        padding-bottom: 5rem;
+    }
+    .aBox-wrapper {
+        top: 0;
+        padding-top: 60vw;
+        margin: 2rem;
+    }
+    .aBox {
+        width: auto;
+        padding: 3rem 2rem;
+        display: block;
+        margin: 2rem;
+    }
+    .aBox_content {
+        height: auto;
+    }
+    .aBox h3 {
+        font-size: 2.75rem;
+    }
+    .aBox p,
+    .aBox ul {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    /* BRING THE ACTION */
+    #bringtheaction1,
+    #bringtheaction2,
+    #bringtheaction3 {
+        height: inherit !important;
+        display: block;
+        padding: 2rem;
+    }
+    #bringtheaction1 h2,
+    #bringtheaction2 h2,
+    #bringtheaction3 h2 {
+        position: static;
+        display: inline-block;
+    }
+    .overlay_img {
+        position: relative;
+    }
+    .overlay_img2 {
+        position: static;
+        width: 80%;
+        margin: 0 auto 3rem;
+    }
+    .movin_text_back {
+        position: static;
+        font-size: 15vw;
+        height: 20vw;
+        margin: 2rem 0 0 0
+    }
+    .overlay_text {
+        position: static;
+    }
+    .overlay_text p {
+        width: auto;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+        margin: 0 0 1.5rem 0;
+    }
+    h3 img {
+        width: 3rem;
+        margin-top: .5rem;
+    }
+    .overlay_img1 {
+        width: 50%;
+        left: 0;
+        top: 0;
+    }
+    #bringtheaction1 .fp-scrollable,
+    #bringtheaction1 .fp-scroller {
+        overflow: inherit !important;
+    }
+    #bringtheaction2 .fp-scrollable,
+    #bringtheaction2 .fp-scroller {
+        overflow: inherit !important;
+    }
+    #bringtheaction3 .fp-scrollable,
+    #bringtheaction3 .fp-scroller {
+        overflow: inherit !important;
+    }
+    /* WORK */
+    #work {
+        display: block;
+    }
+    #work .overlay_text {
+        padding: 0 2rem;
+    }
+    .overlay_img3 {
+        position: static;
+        width: 100%;
+    }
+    .light_bg_text_bottom {
+        top: 72vw;
+    }
+    /* Contact */
+    #contact {
+        display: block;
+        background-size: 170%;
+    }
+    .contact_form_wrapper {
+        display: block;
+        margin-right: 0;
+        padding: 10rem 2rem 30rem 2rem;
+    }
+    .contact_text {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+        margin: 0 0 2.5rem 0;
+    }
+    .contact_form {
+        width: 100%;
+    }
+    label {
+        font-size: 1.75rem !important;
+        margin-left: 1.5rem !important;
+    }
+    div.wpforms-container-full .wpforms-form .wpforms-field {
+        padding: 0 0 2rem 0 !important;
+    }
+    .aField input,
+    .aField textarea {
+        font-size: 1rem !important;
+        padding: 1.5rem 2rem !important;
+    }
+    .aField textarea {
+        height: 10rem !important;
+    }
+    .contact_form .btn-blue {
+        border-radius: 2rem !important;
+        font-size: 2rem !important;
+        padding: 1rem 3rem !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    .tel-link {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+    /* FIX */
+    .fp-scrollable {
+        position: static;
+        min-height: 100%;
+    }
+    .iScrollVerticalScrollbar.iScrollLoneScrollbar {
+        display: none;
+    }
+    #home .fp-scrollable {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #whatisit .fp-scrollable,
+    #whatisit .fp-scroller {
+        height: 90vh !important;
+        width: 100vw;
+    }
+    .fp-section,
+    .fp-tableCell {
+        height: auto !important;
+        min-height: 100%;
+        width: 100vw;
+    }
+    footer.fp-section {
+        min-height: inherit;
+    }
+    /* Header */
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    #home {
+        background-image: url(../images/home_bg_mobile.svg);
+    }
+    .logo {
+        width: 12vw;
+        top: 2rem;
+        left: 2rem;
+        position: absolute;
+    }
+    .burger {
+        display: flex;
+        position: absolute;
+        width: 3rem;
+        height: 1.25rem;
+        top: 4rem;
+    }
+    .burger.open {
+        width: 3rem;
+    }
+    .burger.open::before {
+        width: 3rem;
+    }
+    .burger.open::after {
+        width: 3rem;
+        margin-top: -1rem;
+        margin-left: -3rem;
+    }
+    header nav {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 100%;
+        background-color: #011D52;
+        padding: 10rem 5rem 5rem 5rem;
+        transition: all 0.25s ease;
+    }
+    header nav.open {
+        right: 0;
+    }
+    header nav ul li a,
+    .wpml-ls-legacy-list-horizontal a {
+        font-size: 3.5rem;
+    }
+    header nav ul.lang,
+    .wpml-ls-legacy-list-horizontal {
+        margin-bottom: 5rem;
+    }
+    header.sticky .logo {
+        opacity: 0;
+    }
+    header.sticky .book_a_demo {
+        opacity: 0 !important;
+    }
+    /* Footer */
+    footer .desktop {
+        display: none;
+    }
+    footer .mobile {
+        display: block;
+    }
+    footer {
+        background-image: url('../images/footer_bg_mobile.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem;
+        text-align: center;
+    }
+    footer .logo_footer {
+        width: 12%;
+        margin: 2rem 0;
+    }
+    .social a {
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
+    footer nav ul {
+        text-align: center;
+    }
+    footer nav {
+        margin: 1rem 0;
+    }
+    footer nav ul li {
+        display: inline-flex;
+        padding-left: 0;
+        padding: .5rem;
+    }
+    footer nav ul li a {
+        font-size: 1.2rem;
+    }
+    footer .powered {
+        font-size: 1rem;
+        display: block;
+    }
+    /* home */
+    .hero_phone {
+        width: 75%;
+        height: auto;
+    }
+    .hero_scroll {
+        display: none;
+    }
+    .book_a_demo {
+        display: none;
+    }
+    h1 {
+        font-size: 15vw;
+        line-height: 1;
+        bottom: 4rem;
+        left: 4rem;
+    }
+    h1 span.line2 {
+        left: 6vw;
+    }
+    h1 span.slogan {
+        left: 6.2vw;
+    }
+    h1 span.slogan {
+        font-size: 2rem;
+    }
+    /* About */
+    h2 {
+        font-size: 3.75rem;
+        left: 4rem;
+        top: 2rem;
+    }
+    .whatisit_slider_content {
+        width: 100vw;
+    }
+    .whatisit_slider_content .foam {
+        width: 45vw;
+        left: 20vw;
+        margin-top: -10vw;
+        margin-left: inherit;
+        margin-bottom: 0;
+    }
+    .whatisit_slider_content .iphone {
+        width: 30vw;
+        margin-right: inherit;
+        right: 20vw;
+    }
+    .whatisit_slider_content .slider_text {
+        font-size: 2rem;
+        width: 75vw;
+    }
+    .whatisit_slider_content .slider_text_back {
+        font-size: 20vw;
+        bottom: 8rem;
+        left: 2rem;
+        width: 100vw;
+    }
+    .num_content {
+        padding: 0 2rem;
+        font-size: 2rem;
+    }
+    .whatisit_slider_content .carres {
+        width: 80vw;
+        max-width: inherit;
+        margin-top: -10vw;
+    }
+    .whatisit_slider_content .casquette {
+        width: 80%;
+        margin-top: -10vw;
+    }
+    /* SMS JUST WORS */
+    #whereitworks {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10rem 2rem 2rem 2rem;
+    }
+    #whereitworks .fp-scroller {
+        transform: inherit !important;
+    }
+    #whereitworks .fp-scrollable {
+        height: auto !important;
+        position: static !important;
+    }
+    .source {
+        font-size: 1rem;
+        left: 4rem;
+        bottom: 3rem;
+    }
+    .stats-wrapper {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    /* WHY SMS IS BETTER */
+    .whysms_text_back {
+        top: 16rem;
+    }
+    #whysms .fp-scroller {
+        padding-bottom: 5rem;
+    }
+    .aBox-wrapper {
+        top: 0;
+        padding-top: 20rem;
+        margin: 2rem;
+    }
+    .aBox {
+        width: auto;
+        padding: 3rem 2rem;
+        display: block;
+        margin: 2rem;
+    }
+    .aBox_content {
+        height: auto;
+    }
+    .aBox h3 {
+        font-size: 2.75rem;
+    }
+    .aBox p,
+    .aBox ul {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    .aBox-wrapper .empty {
+        display: none;
+    }
+    /* BRING THE ACTION */
+    #bringtheaction1,
+    #bringtheaction2,
+    #bringtheaction3 {
+        height: inherit !important;
+        display: block;
+        padding: 2rem 4rem;
+    }
+    #bringtheaction1 h2,
+    #bringtheaction2 h2,
+    #bringtheaction3 h2 {
+        position: static;
+        display: inline-block;
+    }
+    .overlay_img {
+        position: relative;
+    }
+    .overlay_img2 {
+        position: static;
+        width: 80%;
+        margin: 0 auto 3rem;
+    }
+    .movin_text_back {
+        position: static;
+        font-size: 15vw;
+        height: 20vw;
+        margin: 2rem 0 0 0
+    }
+    .overlay_text {
+        position: static;
+    }
+    .overlay_text p {
+        width: auto;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+        margin: 0 0 1.5rem 0;
+    }
+    h3 img {
+        width: 3rem;
+        margin-top: .5rem;
+    }
+    .overlay_img1 {
+        width: 50%;
+        left: 0;
+        top: 0;
+    }
+    #bringtheaction1 .fp-scrollable,
+    #bringtheaction1 .fp-scroller {
+        overflow: inherit !important;
+    }
+    #bringtheaction2 .fp-scrollable,
+    #bringtheaction2 .fp-scroller {
+        overflow: inherit !important;
+    }
+    #bringtheaction3 .fp-scrollable,
+    #bringtheaction3 .fp-scroller {
+        overflow: inherit !important;
+    }
+    /* WORK */
+    #work {
+        display: block;
+    }
+    #work .overlay_text {
+        padding: 0 2rem;
+    }
+    .overlay_img3 {
+        position: static;
+        width: 100%;
+    }
+    /* Contact */
+    #contact {
+        display: block;
+        background-size: 100%;
+    }
+    .contact_form_wrapper {
+        display: block;
+        margin-right: 0;
+        padding: 10rem 3rem;
+    }
+    .contact_text {
+        width: 50%;
+        margin-left: 1rem;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    h4 {
+        font-size: 2rem;
+        margin: 0 0 1.5rem 0;
+    }
+    .contact_form {
+        padding-left: 15%;
+        width: auto;
+    }
+    label {
+        font-size: 1.75rem !important;
+        margin-left: 1.5rem !important;
+    }
+    div.wpforms-container-full .wpforms-form .wpforms-field {
+        padding: 0 0 2rem 0 !important;
+    }
+    .aField input,
+    .aField textarea {
+        font-size: 1rem !important;
+        padding: 1.5rem 2rem !important;
+    }
+    .aField textarea {
+        height: 10rem !important;
+    }
+    .contact_form .btn-blue {
+        border-radius: 2rem !important;
+        font-size: 2rem !important;
+        padding: 1rem 3rem !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    .tel-link {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+    /* FIX */
+    .fp-scrollable {
+        position: static;
+        min-height: 100vh;
+    }
+    .iScrollVerticalScrollbar.iScrollLoneScrollbar {
+        display: none;
+    }
+    #home .fp-scrollable,
+    #whatisit .fp-scrollable {
+        height: auto !important;
+        min-height: 100%;
+    }
+    #whatisit .fp-scrollable,
+    #whatisit .fp-scroller {
+        overflow: inherit !important;
+    }
+    .fp-section,
+    .fp-tableCell {
+        height: auto !important;
+        min-height: 100%;
+    }
+    footer.fp-section {
+        min-height: inherit;
+    }
+    /* Header */
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    #home {
+        background-image: url(../images/home_bg_mobile.svg);
+    }
+    .logo {
+        width: 12vw;
+        top: 2rem;
+        left: 2rem;
+        position: absolute;
+    }
+    .burger {
+        display: flex;
+        position: absolute;
+        width: 3rem;
+        height: 1.25rem;
+        top: 4rem;
+    }
+    .burger.open {
+        width: 3rem;
+    }
+    .burger.open::before {
+        width: 3rem;
+    }
+    .burger.open::after {
+        width: 3rem;
+        margin-top: -1rem;
+        margin-left: -3rem;
+    }
+    header nav {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 100%;
+        background-color: #011D52;
+        padding: 10rem 5rem 5rem 5rem;
+        transition: all 0.25s ease;
+    }
+    header nav.open {
+        right: 0;
+    }
+    header nav ul li a,
+    .wpml-ls-legacy-list-horizontal a {
+        font-size: 3.5rem;
+    }
+    header nav ul.lang,
+    .wpml-ls-legacy-list-horizontal {
+        margin-bottom: 5rem;
+    }
+    header.sticky .logo {
+        opacity: 0;
+    }
+    header.sticky .book_a_demo {
+        opacity: 0 !important;
+    }
+    /* Footer */
+    footer .desktop {
+        display: none;
+    }
+    footer .mobile {
+        display: block;
+    }
+    footer {
+        background-image: url('../images/footer_bg_mobile.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem;
+        text-align: center;
+    }
+    footer .logo_footer {
+        width: 12%;
+        margin: 2rem 0;
+    }
+    .social a {
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
+    footer nav ul {
+        text-align: center;
+    }
+    footer nav {
+        margin: 1rem 0;
+    }
+    footer nav ul li {
+        display: inline-flex;
+        padding-left: 0;
+        padding: .5rem;
+    }
+    footer nav ul li a {
+        font-size: 1.2rem;
+    }
+    footer .powered {
+        font-size: 1rem;
+        display: block;
+    }
+    /* home */
+    .hero_phone {
+        width: 75%;
+        height: auto;
+    }
+    .hero_scroll {
+        display: none;
+    }
+    .book_a_demo {
+        display: none;
+    }
+    h1 {
+        font-size: 15vw;
+        line-height: 1;
+        bottom: 4rem;
+        left: 4rem;
+    }
+    h1 span.line2 {
+        left: 6vw;
+    }
+    h1 span.slogan {
+        left: 6.2vw;
+    }
+    h1 span.slogan {
+        font-size: 2rem;
+    }
+    /* About */
+    h2 {
+        font-size: 3.75rem;
+        left: 4rem;
+        top: 6rem;
+    }
+    .whatisit_slider_content .foam {
+        width: 45vw;
+        left: 20vw;
+        margin-top: inherit;
+        margin-left: inherit;
+        margin-bottom: 0;
+    }
+    .whatisit_slider_content .iphone {
+        width: 30vw;
+        margin-right: inherit;
+        margin-bottom: -10vw;
+        right: 20vw;
+    }
+    .whatisit_slider_content .slider_text {
+        font-size: 2.5rem;
+        width: 55%;
+    }
+    .whatisit_slider_content .slider_text_back {
+        font-size: 18vw;
+        bottom: 18vw;
+        left: 4rem;
+    }
+    .num_content {
+        padding: 0 2rem;
+        font-size: 3rem;
+    }
+    .whatisit_slider_content .carres {
+        width: 80%;
+        max-width: inherit;
+    }
+    .whatisit_slider_content .casquette {
+        width: 80%;
+    }
+    /* SMS JUST WORS */
+    #whereitworks {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10rem 2rem 2rem 2rem;
+    }
+    #whereitworks .fp-scroller {
+        transform: inherit !important;
+    }
+    #whereitworks .fp-scrollable {
+        height: auto !important;
+        position: static !important;
+    }
+    .source {
+        font-size: 1rem;
+        left: 4rem;
+        bottom: 3rem;
+    }
+    .stats-wrapper {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    /* WHY SMS IS BETTER */
+    #whysms {
+        padding-bottom: 2rem;
+    }
+    .whysms_text_back {
+        top: 15rem;
+    }
+    #whysms .fp-scroller {
+        padding-bottom: 5rem;
+    }
+    .aBox-wrapper {
+        top: 0;
+        padding-top: 20rem;
+        margin: 2rem 5rem;
+    }
+    .aBox-wrapper .empty {
+        display: none;
+    }
+    .aBox {
+        width: auto;
+        padding: 3rem 2rem;
+        display: block;
+    }
+    .aBox_content {
+        height: 20rem;
+    }
+    .aBox h3 {
+        font-size: 2.5rem;
+    }
+    .aBox p,
+    .aBox ul {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    /* BRING THE ACTION */
+    .overlay_img2 {
+        position: static;
+        width: 60vw;
+        left: inherit;
+    }
+    .movin_text_back {
+        font-size: 20vw;
+        height: 20vw;
+    }
+    .overlay_text {
+        left: 4rem;
+        top: inherit;
+        bottom: 3rem;
+    }
+    .overlay_text p {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+        margin: 0 0 1.5rem 0;
+    }
+    h3 img {
+        width: 3rem;
+        margin-top: .5rem;
+    }
+    .overlay_img1 {
+        width: 65%;
+        left: inherit;
+        margin-left: -8rem;
+        margin-top: -20rem;
+    }
+    .overlay_img3 {
+        width: 75%;
+        position: static;
+    }
+    /* WORK */
+    #work .overlay_img {
+        margin-top: -7rem;
+    }
+    #work .overlay_text {
+        left: 4rem;
+        top: inherit;
+        bottom: 12rem;
+    }
+    #work .overlay_text p {
+        width: 75%;
+    }
+    .btn-blue {
+        border-radius: 2.5rem;
+        font-size: 1.75rem;
+        padding: 1rem 2.5rem;
+    }
+    /* Contact */
+    #contact {
+        display: block;
+        background-size: 170%;
+    }
+    .contact_form_wrapper {
+        display: block;
+        margin-right: 0;
+        padding: 15rem 3rem 3rem 3rem;
+    }
+    .contact_text {
+        width: 50%;
+        margin-left: 1rem;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+        margin: 0 0 2.5rem 0;
+    }
+    .contact_form {
+        padding-left: 15%;
+        width: auto;
+    }
+    label {
+        font-size: 1.75rem !important;
+        margin-left: 1.5rem !important;
+    }
+    div.wpforms-container-full .wpforms-form .wpforms-field {
+        padding: 0 0 2rem 0 !important;
+    }
+    .aField input,
+    .aField textarea {
+        font-size: 1rem !important;
+        padding: 1.5rem 2rem !important;
+    }
+    .aField textarea {
+        height: 10rem !important;
+    }
+    .contact_form .btn-blue {
+        border-radius: 2rem !important;
+        font-size: 2rem !important;
+        padding: 1rem 3rem !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    .tel-link {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+    /* FIX */
+    .fp-scrollable {
+        position: static;
+        min-height: 100%;
+    }
+    .iScrollVerticalScrollbar.iScrollLoneScrollbar {
+        display: none;
+    }
+    #home .fp-scrollable {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #whatisit .fp-scrollable,
+    #whatisit .fp-scroller {
+        height: 90vh !important;
+        width: 100vw;
+    }
+    .fp-section,
+    .fp-tableCell {
+        height: auto !important;
+        min-height: 100%;
+        width: 100vw;
+    }
+    footer.fp-section {
+        min-height: inherit;
+    }
+    /* Header */
+    header {
+        position: absolute;
+        width: 100%;
+    }
+    #home {
+        background-image: url(../images/home_bg_mobile.svg);
+    }
+    .logo {
+        width: 8vw;
+        top: 2rem;
+        left: 2rem;
+        position: absolute;
+    }
+    .burger {
+        display: flex;
+        position: absolute;
+        width: 3rem;
+        height: 1.25rem;
+        top: 4rem;
+    }
+    .burger.open {
+        width: 3rem;
+    }
+    .burger.open::before {
+        width: 3rem;
+    }
+    .burger.open::after {
+        width: 3rem;
+        margin-top: -1rem;
+        margin-left: -3rem;
+    }
+    header nav {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 100%;
+        background-color: #011D52;
+        padding: 10rem 5rem 5rem 5rem;
+        transition: all 0.25s ease;
+    }
+    header nav.open {
+        right: 0;
+    }
+    header nav ul li a,
+    .wpml-ls-legacy-list-horizontal a {
+        font-size: 2rem;
+    }
+    header nav ul.lang,
+    .wpml-ls-legacy-list-horizontal {
+        margin-bottom: 5rem;
+    }
+    header.sticky .logo {
+        opacity: 0;
+    }
+    header.sticky .book_a_demo {
+        opacity: 0 !important;
+    }
+    /* Footer */
+    footer .desktop {
+        display: none;
+    }
+    footer .mobile {
+        display: block;
+    }
+    footer {
+        background-image: url('../images/footer_bg_mobile.svg');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem;
+        text-align: center;
+    }
+    footer .logo_footer {
+        width: 12%;
+        margin: 2rem 0;
+    }
+    .social a {
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
+    footer nav ul {
+        text-align: center;
+    }
+    footer nav {
+        margin: 1rem 0;
+    }
+    footer nav ul li {
+        display: inline-flex;
+        padding-left: 0;
+        padding: .5rem;
+    }
+    footer nav ul li a {
+        font-size: 1.2rem;
+    }
+    footer .powered {
+        font-size: 1rem;
+        display: block;
+    }
+    /* home */
+    .hero_phone {
+        width: 40vw;
+        height: auto;
+    }
+    .hero_scroll {
+        display: none;
+    }
+    .book_a_demo {
+        display: none;
+    }
+    h1 {
+        font-size: 8vw;
+        line-height: 1;
+        bottom: 4rem;
+        left: 2rem;
+    }
+    h1 span.line2 {
+        left: 6vw;
+    }
+    h1 span.slogan {
+        left: 6.2vw;
+    }
+    h1 span.slogan {
+        font-size: 2rem;
+    }
+    /* About */
+    h2 {
+        font-size: 3rem;
+        left: 4rem;
+        top: 2rem;
+    }
+    .whatisit_slider_content .foam {
+        width: 25vw;
+        left: 35vw;
+        margin-top: -10vw;
+        margin-left: inherit;
+        margin-bottom: 0;
+    }
+    .whatisit_slider_content .iphone {
+        width: 15vw;
+        margin-right: inherit;
+        right: 35vw;
+        margin-top: -10vw;
+    }
+    .whatisit_slider_content .slider_text {
+        font-size: 2rem;
+        width: 55%;
+    }
+    .whatisit_slider_content .slider_text_back {
+        font-size: 10vw;
+        bottom: 0;
+        left: 4rem;
+    }
+    .num_content {
+        padding: 0 2rem;
+        font-size: 2rem;
+    }
+    .whatisit_slider_content .carres {
+        width: 50%;
+        max-width: inherit;
+    }
+    .whatisit_slider_content .casquette {
+        width: 50%;
+    }
+    /* SMS JUST WORS */
+    #whereitworks {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    #whereitworks .fp-scroller {
+        transform: inherit !important;
+    }
+    #whereitworks .fp-scrollable {
+        height: auto !important;
+        position: static !important;
+    }
+    .source {
+        font-size: 1rem;
+        left: 4rem;
+        bottom: 3rem;
+    }
+    .stats-wrapper {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    .aStats {
+        width: 65%;
+    }
+    .aBoxCol {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        -ms-flex: 0 0 50% !important;
+    }
+    /* WHY SMS IS BETTER */
+    .whysms_text_back {
+        top: 15rem;
+    }
+    #whysms .fp-scroller {
+        padding-bottom: 5rem;
+    }
+    .aBox-wrapper {
+        top: 0;
+        padding-top: 20rem;
+        margin: 2rem 5rem;
+    }
+    .aBox-wrapper .empty {
+        display: none;
+    }
+    .aBox {
+        width: auto;
+        padding: 3rem 2rem;
+        display: block;
+    }
+    .aBox_content {
+        height: 20rem;
+    }
+    .aBox h3 {
+        font-size: 2.5rem;
+    }
+    .aBox p,
+    .aBox ul {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    /* BRING THE ACTION */
+    .overlay_img2 {
+        position: static;
+        width: 40vw;
+        left: inherit;
+        margin-right: -20rem;
+    }
+    .movin_text_back {
+        font-size: 20vw;
+        height: 20vw;
+    }
+    .overlay_text {
+        left: 4rem;
+        top: inherit;
+        bottom: 3rem;
+    }
+    .overlay_text p {
+        width: 50%;
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 3rem;
+        margin: 0 0 1.5rem 0;
+    }
+    h3 img {
+        width: 3rem;
+        margin-top: .5rem;
+    }
+    .overlay_img1 {
+        left: inherit;
+        margin-left: -5rem;
+        margin-top: -10vw;
+    }
+    .overlay_img3 {
+        width: 55%;
+        position: static;
+    }
+    /* WORK */
+    #work .overlay_img {
+        right: 4rem;
+    }
+    #work .overlay_img img {
+        width: 45vw;
+    }
+    #work .overlay_text {
+        left: 4rem;
+        top: inherit;
+        bottom: 12rem;
+    }
+    #work .overlay_text p {
+        width: 55vw;
+    }
+    .btn-blue {
+        border-radius: 2.5rem;
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
+    }
+    /* Contact */
+    #contact {
+        display: block;
+        background-size: 75%;
+    }
+    .contact_form_wrapper {
+        display: block;
+        margin-right: 0;
+        padding: 5rem 3rem;
+    }
+    .contact_text {
+        width: 50%;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+        margin: 0 0 1rem 0;
+    }
+    .contact_form {
+        margin-left: auto;
+        width: 50%;
+    }
+    label {
+        font-size: 1.75rem !important;
+        margin-left: 1.5rem !important;
+    }
+    div.wpforms-container-full .wpforms-form .wpforms-field {
+        padding: 0 0 1rem 0 !important;
+    }
+    .aField input,
+    .aField textarea {
+        font-size: 1rem !important;
+        padding: 1.25rem 1.5rem !important;
+    }
+    .aField textarea {
+        height: 8rem !important;
+    }
+    .contact_form .btn-blue {
+        border-radius: 2.5rem !important;
+        font-size: 1.5rem !important;
+        padding: 1rem 1.5rem !important;
+    }
+}
