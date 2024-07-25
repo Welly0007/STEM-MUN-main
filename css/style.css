@@ -1,15 +1,11 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   /* overflow-x: hidden; */
   color: #555a61;
   /* background-color: #10161a; */
-  
 }
-
-
-
 @font-face {
   font-family: organetto;
   src: url(../fonts/organetto/Fontspring-DEMO-organetto-regular.otf);
@@ -154,18 +150,16 @@ a{
 /* --  background image section  -- */
 
 .bg-img {
-  background-image: url("../img/Team.png");
+  background-image: url("../img/background1.jpg");
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
-  background-color: rgba(250, 250, 250, 0.7);
-
 }
 
 .bg-img .overlay {
@@ -2002,107 +1996,4 @@ font-size: 40px;
 .text-center {
   margin: auto;
   width: fit-content;
-}
-
-.flex-container::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(53, 64, 82, 0.2);
-}
-
-#typedtext {
-  z-index: 10;
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, 50%);
-  font-family: 'Lexend', 'san-serif';
-}
-
-.cta
-{
-	margin-left: 15px;
-	margin-right: 15px;
-	padding: 10px 60px;
-	font-size: 15px;
-	font-weight: bold;
-	display: inline-block;
-	margin-top: 40px;
-	position: relative;
-	overflow: hidden;
-	transition:all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-  position: absolute;
-  left: 50%;
-  top: 57%;
-  transform: translate(-50%, 50%);
-}
-
-.cta-portfolio
-{
-	//background-color: #e84118;
-	border: 1px solid #e84118;
-}
-
-.cta-portfolio::before
-{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #FFF;
-	content:'';
-	z-index: -1;
-	transition:all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-}
-
-.cta-portfolio:hover
-{
-	border-color: #fff;
-}
-
-.cta-portfolio:hover::before
-{
-	left: 100%;
-}
-
-.cta-contact
-{
-	border: 1px solid #fff;
-}
-
-.cta-contact::after
-{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: -100%;
-	content: '';
-	background-color: #FFF;
-	transition:all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	z-index: -1;
-}
-
-.cta-contact:hover::after
-{
-	left: 0;
-}
-
-.cta-contact:hover
-{
-	background-color: #FFF;
 }
