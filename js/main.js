@@ -4,9 +4,12 @@ $(window).on('load', function() {
     }, 100); // 5000 milliseconds = 5 seconds
   });
 
+
 (function($){"use strict"
 $('body').scrollspy({target:'#nav',offset:$(window).height()/2});$("#nav .main-nav a[href^='#']").on('click',function(e){e.preventDefault();var hash=this.hash;$('html, body').animate({scrollTop:$(this.hash).offset().top},600);});$('#back-to-top').on('click',function(){$('body,html').animate({scrollTop:0},600);});$('#nav .nav-collapse').on('click',function(){$('#nav').toggleClass('open');});$('.has-dropdown a').on('click',function(){$(this).parent().toggleClass('open-drop');});$(window).on('scroll',function(){var wScroll=$(this).scrollTop();wScroll>1?$('#back-to-top').fadeIn():$('#back-to-top').fadeOut();});$('.work').magnificPopup({delegate:'.lightbox',type:'image'});$('#about-slider').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});$('#h4hovimonial-slider').owlCarousel({loop:true,margin:15,dots:true,nav:false,autoplay:true,responsive:{0:{items:1},992:{items:2}}});})(jQuery);
 
+
+//endscrollreveal
     // set up text to print, each item in array is new line
     var aText = new Array(
         "STEM Model United",
@@ -48,6 +51,60 @@ $('body').scrollspy({target:'#nav',offset:$(window).height()/2});$("#nav .main-n
         });
         //end type writer
         // 
+
+//scrollreveal
+const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+};
+
+ScrollReveal().reveal(".col-md-12 h2", {
+    ...scrollRevealOption,
+});
+ScrollReveal().reveal(".col-md-12 h6", {
+    ...scrollRevealOption,
+    delay: 250,
+});
+ScrollReveal().reveal(".col-md-12 p", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+ScrollReveal().reveal(".section-header .title", {
+    ...scrollRevealOption,
+});
+ScrollReveal().reveal(".col-md-6 p", {
+    ...scrollRevealOption,
+    delay: 250,
+});
+ScrollReveal().reveal(".col-md-6 .imggg", {
+    ...scrollRevealOption,
+    origin: "right",
+    delay: 500,
+});
+ScrollReveal().reveal(".become-a-delegate button", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 500,
+});
+
+ScrollReveal().reveal(".abouthov img", {
+    ...scrollRevealOption,
+    origin: "top",
+});
+ScrollReveal().reveal(".abouthov h4", {
+    ...scrollRevealOption,
+    origin: "left",
+    delay: 250,
+});
+ScrollReveal().reveal(".abouthov p", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 500,
+});
+
+
+//col-md-6
         //DARK MODE
         //
         var choice = true;
