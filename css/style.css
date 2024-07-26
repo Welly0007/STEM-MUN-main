@@ -122,6 +122,9 @@ ol {
   margin-bottom: 100px;
 }
 #typedtext{
+  max-width: fit-content;
+  margin: auto;
+  text-align: center;
   color: #fff;
   opacity: 1;
   font-size: 42pt;
