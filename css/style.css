@@ -92,6 +92,20 @@ ol {
 
 /* -- section  -- */
 
+.stats {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.stats p {
+  color: #fff;
+  font-size: large;
+  width: 69px;
+  margin-right: 100px;
+}
+
 .section {
   position: relative;
 }
@@ -122,16 +136,27 @@ ol {
   margin-bottom: 100px;
 }
 #typedtext{
+<<<<<<< Updated upstream
   max-width: fit-content;
   margin: auto;
   text-align: center;
+=======
+<<<<<<< Updated upstream
+=======
+  max-width: fit-content;
+  margin-left: auto;
+  text-align: center;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   color: #fff;
   opacity: 1;
   font-size: 42pt;
   height: 200px;
   overflow: hidden;
   width: max-content;
-  cursor:default;
+  cursor: default;
+  margin-right: auto;
+  margin-top: 10%;
 }
 .test{
   padding: 500px;

@@ -51,6 +51,11 @@ $('body').scrollspy({target:'#nav',offset:$(window).height()/2});$("#nav .main-n
         });
         //end type writer
         // 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 
 //scrollreveal
 const scrollRevealOption = {
@@ -102,9 +107,41 @@ ScrollReveal().reveal(".abouthov p", {
     origin: "bottom",
     delay: 500,
 });
+<<<<<<< Updated upstream
 
 
 //col-md-6
+=======
+ScrollReveal().reveal(".p-1", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 4000,
+});
+ScrollReveal().reveal(".p-2", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 4250,
+});
+ScrollReveal().reveal(".p-3", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 4500,
+});
+ScrollReveal().reveal(".p-4", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 4750,
+});
+ScrollReveal().reveal(".p-5", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 5000,
+});
+
+
+//col-md-6
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         //DARK MODE
         //
         var choice = true;
