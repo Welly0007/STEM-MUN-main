@@ -92,6 +92,21 @@ ol {
 
 /* -- section  -- */
 
+.stats {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.stats p {
+  color: #000;
+  font-size: large;
+  font-weight: bold;
+  width: 69px;
+  margin-right: 100px;
+}
+
 .section {
   position: relative;
 }
@@ -123,7 +138,7 @@ ol {
 }
 #typedtext{
   max-width: fit-content;
-  margin: auto;
+  margin-left: auto;
   text-align: center;
   color: #fff;
   opacity: 1;
@@ -131,7 +146,9 @@ ol {
   height: 200px;
   overflow: hidden;
   width: max-content;
-  cursor:default;
+  cursor: default;
+  margin-right: auto;
+  margin-top: 10%;
 }
 .test{
   padding: 500px;

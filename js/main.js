@@ -102,6 +102,32 @@ ScrollReveal().reveal(".abouthov p", {
     origin: "bottom",
     delay: 500,
 });
+ScrollReveal().reveal(".p-1", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 500,
+});
+ScrollReveal().reveal(".p-2", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 550,
+});
+ScrollReveal().reveal(".p-3", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 600,
+});
+ScrollReveal().reveal(".p-4", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 650,
+});
+ScrollReveal().reveal(".p-5", {
+    ...scrollRevealOption,
+    origin: "bottom",
+    delay: 700,
+});
+
 
 
 //col-md-6
