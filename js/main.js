@@ -6,10 +6,56 @@ $(window).on('load', function() {
 
 
 (function($){"use strict"
-$('body').scrollspy({target:'#nav',offset:$(window).height()/2});$("#nav .main-nav a[href^='#']").on('click',function(e){e.preventDefault();var hash=this.hash;$('html, body').animate({scrollTop:$(this.hash).offset().top},600);});$('#back-to-top').on('click',function(){$('body,html').animate({scrollTop:0},600);});$('#nav .nav-collapse').on('click',function(){$('#nav').toggleClass('open');});$('.has-dropdown a').on('click',function(){$(this).parent().toggleClass('open-drop');});$(window).on('scroll',function(){var wScroll=$(this).scrollTop();wScroll>1?$('#back-to-top').fadeIn():$('#back-to-top').fadeOut();});$('.work').magnificPopup({delegate:'.lightbox',type:'image'});$('#about-slider').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});$('#h4hovimonial-slider').owlCarousel({loop:true,margin:15,dots:true,nav:false,autoplay:true,responsive:{0:{items:1},992:{items:2}}});})(jQuery);
+$('body').scrollspy({target:'#nav',offset:$(window).height()/2});$("#nav .main-nav a[href^='#']").on('click',function(e){e.preventDefault();var hash=this.hash;$('html, body').animate({scrollTop:$(this.hash).offset().top},600);});$('#back-to-top').on('click',function(){$('body,html').animate({scrollTop:0},600);});$('#nav .nav-collapse').on('click',function(){$('#nav').toggleClass('open');});$('.has-dropdown a').on('click',function(){$(this).parent().toggleClass('open-drop');});$(window).on('scroll',function(){var wScroll=$(this).scrollTop();wScroll>1?$('#back-to-top').fadeIn():$('#back-to-top').fadeOut();});$('.work').magnificPopup({delegate:'.lightbox',type:'image'});
+$('#about-slider').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});$('#h4hovimonial-slider').owlCarousel({loop:true,margin:15,dots:true,nav:false,autoplay:true,responsive:{0:{items:1},992:{items:2}}});})(jQuery);
+$('#event-slider').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});
+
+
+
 
 
 //endscrollreveal
+
+// count number start
+
+function startCounter() {
+    let valueDisplays = document.querySelectorAll(".number");
+let interval = 2000;
+valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue + "+";
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+}
+
+let observerOptions = {
+    threshold: 0.5 // Adjust this value as needed
+};
+
+let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounter();
+            observer.disconnect(); // Stop observing after the counter starts
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.p-1, .p-2, .p-3, .p-4, .p-5, .p-6').forEach(element => {
+    observer.observe(element);
+});
+
+
+
+//count number end
+
     // set up text to print, each item in array is new line
     var aText = new Array(
         "STEM Model United",

@@ -92,19 +92,51 @@ ol {
 
 /* -- section  -- */
 
-.stats {
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+.stats{
+  
+}
+
+.stats-container {
   display: flex;
+  padding: 0 25px;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+.stastics-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  width: 239px;
+  border: #eeeeee 1px solid;
+}
+
+.statistics h1 {
+  color: #000;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .stats p {
-  color: #000;
-  font-size: large;
-  font-weight: bold;
-  width: 69px;
-  margin-right: 100px;
+  border-top: #6195ff 3px solid;
+  font-size: 12px;
+}
+
+@media(max-width:450px){
+  .stastics-card{
+    width: 100%;
+  }
+
+  .stats p{
+    font-size: 15px;
+  }
 }
 
 .section {
