@@ -231,12 +231,11 @@
         <span></span>
       </div>
       <ul class="main-nav nav navbar-nav navbar-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about2">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about2">About</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="conferences.html">Conferences</a></li>
-        <li><a href="committees.html">committees</a></li>
-        <li><a href="competition.html">SPARK</a></li>
+        <!--<li><a href="competition.html">SPARK</a></li>-->
         <li><a href="Team.html">Meet The Board</a></li>
         <li><a href="contact.html">Contact</a></li>
         <!-- <li><a class="active" id="cta" href="apply.html">Apply</a></li> -->
@@ -251,7 +250,7 @@
   </header>
 
   <div class="flex-container">
-    <h1>Coming Soon, Stay tuned!</h1>
+    <h1>Find out about our events</h1>
     <p></p>
   </div>
   <div id="preloader">
@@ -297,6 +296,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+          <div id="event-slider" class="owl-carousel owl-theme">
+            <img class="img-responsive" src="img/sports/s1.jpeg" alt="" />
+            <img class="img-responsive" src="img/sports/s2.jpeg" alt="" loading="lazy" />
+            <img class="img-responsive" src="img/sports/s3.jpeg" alt="" loading="lazy" />
+            <img class="img-responsive" src="img/sports/s5.jpeg" alt="" loading="lazy" />
+            <img class="img-responsive" src="img/sports/s7.jpeg" alt="" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="col-md-6">
           <div class="section-header">
             <h2 class="title">Sports Event</h2>
           </div>
@@ -308,14 +317,35 @@
             And now that’s your turn, share with us how the sports you do affect your mental health.
           </p>
         </div>
+      
+      </div>
+      <!--
+      <div class="become-a-delegate">
+        <a href="delegates.html"><button type="button" class="dbutton">Become a delegate!!</button></a>
+      </div>-->
+    </div>
+  </div>
+
+  <div id="pricing" class="section md-padding bg-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-header">
+            <h2 class="title">Glimpse from the Past</h2>
+          </div>
+          <p>
+            As a follow up to our Public Park – preserving campaign, we paid a visit to the wonderful El Horreya park, where we an event dedicated to cleaning the park. Most MUN members participated in the cleaning and showed great diligence. By the end of the day, we were able to clean most of the park. This event was also a great opportunity for members to catch up and know more about each other. Members also participated in a number of fun activities.
+          </p>
+        </div>
 
         <div class="col-md-6">
-          <div id="event-slider" class="owl-carousel owl-theme">
-            <img class="img-responsive" src="img/sports/s1.jpeg" alt="" />
-            <img class="img-responsive" src="img/sports/s2.jpeg" alt="" loading="lazy" />
-            <img class="img-responsive" src="img/sports/s3.jpeg" alt="" loading="lazy" />
-            <img class="img-responsive" src="img/sports/s5.jpeg" alt="" loading="lazy" />
-            <img class="img-responsive" src="img/sports/s7.jpeg" alt="" loading="lazy" />
+          <div id="glimpse-slider" class="owl-carousel owl-theme">
+            <img class="img-responsive" src="img/glimpse/g1.jpg" alt="" />
+            <img class="img-responsive" src="img/glimpse/g2.jpg" alt="" loading="lazy" />
+            <img class="img-responsive" src="img/glimpse/g3.jpg" alt="" loading="lazy" />
+            <img class="img-responsive" src="img/glimpse/g4.jpg" alt="" loading="lazy" />
+            <img class="img-responsive" src="img/glimpse/g5.jpg" alt="" loading="lazy" />
+            <img class="img-responsive" src="img/glimpse/g6.jpg" alt="" loading="lazy" />
           </div>
         </div>
       
@@ -326,6 +356,51 @@
       </div>-->
     </div>
   </div>
+
+  <footer id="footer" class="sm-padding bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-logo">
+            <a href="#home"><img src="img/logo.svg" alt="logo" /></a>
+          </div>
+
+          <ul class="footer-follow">
+            <li>
+              <a href="https://www.facebook.com/STEMModelUnitedNations" target="_blank">
+                <i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/stem_mun/" target="_blank">
+                <i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+
+          <div class="footer-copyright">
+            <p>
+              Copyright © <span id="demo"></span>. All Rights Reserved
+            </p>
+          </div>
+          <script>
+            var d = new Date()
+            document.getElementById("demo").innerHTML = d.getUTCFullYear()
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="footer-links container">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about2">About</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li><a href="conferences.html">Conferences</a></li>
+        <li><a href="Team.html">Meet The Board</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="jss/compressed.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
