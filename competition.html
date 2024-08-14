@@ -30,7 +30,7 @@
     <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="icon.svg" />
+    <link rel="icon" type="image/png" href="icon.ico" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -174,6 +174,23 @@
             transition: all .4s;
         }
 
+        select {
+            height: 40px;
+            width: 100%;
+            border: none;
+            margin-block: 30px;
+            background: #f4f4f4;
+
+            border-bottom: 2px solid #eee;
+            padding: 0px 10px;
+            -webkit-transition: 0.2s border-color, 0.2s opacity;
+            transition: 0.2s border-color, 0.2s opacity;
+        }
+
+        select:focus {
+            outline: #6195ff;
+        }
+
         .caption .social-links i:hover {
             color: #0c52a1;
         }
@@ -214,7 +231,9 @@
 
 <body>
 
-    <header>        <nav id="nav" class="navbar nav">
+    <header>
+
+        <nav id="nav" class="navbar nav">
             <div class="navbar-header">
                 <div id="svg-icon" class="navbar-brand">
                     <a href="index.html">
@@ -231,12 +250,12 @@
 
             <ul class="main-nav nav navbar-nav navbar-right">
                 <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">Secretary Letter</a></li>
+                <li><a href="index.html#about">Letter from the Secretary</a></li>
                 <li><a href="index.html#about2">About</a></li>
                 <li><a href="index.html#portfolio">Main objectives</a></li>
                 <li><a href="index.html#pricing">Glimpse from the past</a></li>
                 <li><a href="index.html#Vision">Vision</a></li>
-                <li><a href="competition.html" style="color: #6195ff;">SPARK</a></li>
+                <li><a href="competition.html" style="color: #6195ff;">Competition</a></li>
                 <li><a href="Team.html">Meet The Board</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <!-- <li><a class="active" id="cta" href="apply.html">Apply</a></li> -->
@@ -245,9 +264,87 @@
 
     </header>
     <div class="flex-container">
-        <h1>Coming Soon, Stay tuned!</h1>
-        <p></p>
+        <h1>SAGE: STEM-MUN Articulate Grand Essays 2024</h1>
+        <p>We are thrilled to announce the "SAGE: STEM-MUN Articulate Grand Essays 2024," the first Egyptian articles
+            competition
+            organized by high schoolers. This mind-blowing event
+            invites young minds to engage in thoughtful writing and contribute their perspectives on some of
+            the most critical issues facing our society today.
+            Don't hesitate to join our fascinating event, and to put your voice to be a part of the change.</p>
     </div>
+    <div class="highboard">
+    </div>
+    <form style="margin: 0 20%;">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required class="text"><br><br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required class="text"><br><br>
+        <label for="Birthdate">Your Birthdate:</label>
+        <input type="date" id="Birthdate" name="Birthdate" required class="text"><br><br>
+        <label for="Phone">Your Phone:</label>
+        <input type="text" id="Phone" name="Phone" required class="text"><br><br>
+        <label for="school">Your School:</label>
+        <input type="text" id="school" name="school" required class="text"><br><br>
+        <label for="grade">Your Grade:</label>
+        <input type="text" id="grade" name="grade" required class="text"><br><br>
+        <select id="Field" name="Field" style="margin-top: 10px">
+            <option value="Quality Education">
+                Quality Education
+            <option value="Politics">
+                Politics</option>
+        </select>
+        <label id="promp" for="prompt1"> Quality education is a privilege not everyone has access to. In your article,
+            discuss the
+            challenges in providing quality education for all and explore successful new strategies that address
+            these challenges.</label><br>
+        <textarea id="prompt1" name="prompt1" rows="5" cols="30" required class="text"></textarea><br><br>
+        <input type="submit" value="Share Your Voice" class="send">
+    </form>
+    <script>
+        document.querySelector('select').onchange = function (event) {
+            if (event.target.value === "Politics") {
+                document.querySelector("#promp").innerHTML = `"Politics is the art of looking for trouble, finding it everywhere, diagnosing it
+            incorrectly and applying the wrong remedies." - Groucho Marx
+            Choose one pressing political issue, discuss how did it arise, underlying causes, and potential influences
+            on the socioeconomic growth, wellbeing of individuals, and sustainability of development.`
+            } else {
+                document.querySelector("#promp").innerHTML = `Quality education is a privilege not everyone has access to. In your article, discuss the
+            challenges in providing quality education for all and explore successful new strategies that address
+            these challenges.`
+            }
+
+        }
+        document.querySelector(".send").addEventListener("click", function (event) {
+            event.preventDefault();
+            const name = document.querySelector("#name").value;
+            const email = document.querySelector("#email").value;
+            const Birthdate = document.querySelector("#Birthdate").value;
+            const grade = document.querySelector("#grade").value;
+            const school = document.querySelector("#school").value;
+            const phone = document.querySelector("#Phone").value;
+            const prompt1 = document.querySelector("#prompt1").value;
+            const field = document.querySelector("select").value;
+            const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdGdXMAcBKxiZC7iwn7nrAA60-qYRc0yxeY945aq8gDliHZbA/formResponse";
+            const formData = { 317679352: field, 1631786627: school, 123620020: name, 1490698635: email, 218283730: phone, 1308134423: grade, 897641835: Birthdate, 2031969761: prompt1 };
+            const data = new URLSearchParams();
+            for (const entry in formData) {
+                if (Object.hasOwnProperty.call(formData, entry)) {
+                    const value = formData[entry];
+                    data.append("entry." + entry, value);
+                }
+            }
+            try {
+                fetch(formUrl, {
+                    method: "POST", body: data, headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    }
+                });
+                alert("message sent successfully")
+            } catch (error) {
+                console.log(error.message);
+            }
+        })   </script>
+
     <div id="preloader">
         <img src="img/earth2-loader.gif" alt="">
         <h1>Welcome, STEM Model United Nation</h1>
