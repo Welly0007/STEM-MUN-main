@@ -10,6 +10,7 @@ $('body').scrollspy({target:'#nav',offset:$(window).height()/2});$("#nav .main-n
 $('#about-slider').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});$('#h4hovimonial-slider').owlCarousel({loop:true,margin:15,dots:true,nav:false,autoplay:true,responsive:{0:{items:1},992:{items:2}}});})(jQuery);
 $('#event-slider').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});
 $('#glimpse-slider').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});
+$('#conference2023').owlCarousel({items:1,loop:true,margin:15,nav:true,navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],dots:true,autoplay:true,animateOut:'fadeOut'});
 
 
 
