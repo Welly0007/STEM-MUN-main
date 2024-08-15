@@ -279,6 +279,14 @@
             AI is strictly prohibited and leads to immediate elimination <br>
             We strongly recommend to have a copy of your answer to avoid any data loss
         </p>
+        <p>
+            <bold>Criteria:</bold><br>
+            Relevance to the Prompt (25%) | Quality of Research (20%)<br>
+            Originality and Creativity (20%) | Clarity and Organization (15%)<br>
+            Argumentation and Critical Thinking (15%) | Grammar and Style (5%)<br>
+            Adherence to Word Limit (5%)
+
+        </p>
     </div>
     <div class="highboard">
     </div>
@@ -360,11 +368,11 @@
     <script>
         document.querySelector('select').onchange = function (event) {
             if (event.target.value === "Politics") {
-                document.querySelector("#promp").innerHTML = `Today, political issues have a more global presence, and there have been many instances of global organizations failing to solve political conflicts and global crises. In your article, discuss the current strategies employed by these organizations, evaluate their effectiveness, and recommend ways for improvement. (350 - 400 Words)`
+                document.querySelector("#promp").innerHTML = `Today, political issues have a more global presence, and there have been many instances of global organizations failing to solve political conflicts and global crises. In your article, discuss the current strategies employed by these organizations, evaluate their effectiveness, and recommend ways for improvement. (350 - 450 Words)`
             } else {
                 document.querySelector("#promp").innerHTML = `Quality education is a privilege not everyone has access to. In your article, discuss the
             challenges in providing quality education for all and explore successful new strategies that address
-            these challenges. (350 - 400 Words)`
+            these challenges. (350 - 450 Words)`
             }
 
         }
