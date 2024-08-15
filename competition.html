@@ -27,11 +27,13 @@
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
     <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="icon.ico" />
+    <link rel="icon" type="image/png" href="img/logo.svg" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js">
@@ -275,8 +277,7 @@
             Word Limit: 350 - 450 <br>
             Citation Style: IEEE <br>
             AI is strictly prohibited and leads to immediate elimination <br>
-            You must fill all the fields <br>
-            We strongly recomment to have a copy of your answer to avoid any data loss
+            We strongly recommend to have a copy of your answer to avoid any data loss
         </p>
     </div>
     <div class="highboard">
@@ -288,7 +289,7 @@
         <input type="email" id="email" name="email" required class="text"><br><br>
         <label for="Birthdate">Your Birthdate:</label>
         <input type="date" id="Birthdate" name="Birthdate" required class="text"><br><br>
-        <label for="Phone">Your Phone:</label>
+        <label for="Phone">Your Phone (Include your country's code):</label>
         <input type="text" id="Phone" name="Phone" required class="text"><br><br>
         <label for="country">Your Country:</label>
         <input type="text" id="country" name="country" required class="text"><br><br>
@@ -309,6 +310,53 @@
         <textarea id="prompt1" name="prompt1" rows="5" cols="30" required class="text"></textarea><br><br>
         <input type="submit" value="Share Your Voice" class="send">
     </form>
+
+    <footer id="footer" class="sm-padding bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer-logo">
+                <a href="#home"><img src="img/logo.svg" alt="logo" /></a>
+              </div>
+    
+              <ul class="footer-follow">
+                <li>
+                  <a href="https://www.facebook.com/STEMModelUnitedNations" target="_blank">
+                    <i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/stem_mun/" target="_blank">
+                    <i class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+    
+              <div class="footer-copyright">
+                <p>
+                  Copyright © <span id="demo"></span>. All Rights Reserved
+                </p>
+              </div>
+              <script>
+                var d = new Date()
+                document.getElementById("demo").innerHTML = d.getUTCFullYear()
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links container">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about2">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="competition.html">SPARK</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="conferences.html">Conferences</a></li>
+            <li><a href="Team.html">Meet The Board</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </footer>
+
     <script>
         document.querySelector('select').onchange = function (event) {
             if (event.target.value === "Politics") {
@@ -340,15 +388,19 @@
                     data.append("entry." + entry, value);
                 }
             }
-            try {
-                fetch(formUrl, {
-                    method: "POST", body: data, headers: {
-                        "Content-Type": "application/x-www-form-urlencoded",
-                    }
-                });
-                alert("message sent successfully");
-            } catch (error) {
-                console.log(error.message);
+            if (name == null || email == null || Birthdate == null || grade == null || country == null || school == null || phone == null || prompt1 == null || field == null) {
+                alert("Please Fill in all Fields");
+            } else {
+                try {
+                    fetch(formUrl, {
+                        method: "POST", body: data, headers: {
+                            "Content-Type": "application/x-www-form-urlencoded",
+                        }
+                    });
+                    alert("message sent successfully");
+                } catch (error) {
+                    console.log(error.message);
+                }
             }
         })   </script>
 
@@ -358,6 +410,7 @@
     </div>
     <!-- preloader end -->
     <script src="jss/compressed.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="24b860a394b1c499bd546738-text/javascript" src="js/jquery.min.js"></script>
     <script type="24b860a394b1c499bd546738-text/javascript" src="js/bootstrap.min.js"></script>
     <script type="24b860a394b1c499bd546738-text/javascript" src="js/owl.carousel.min.js"></script>
