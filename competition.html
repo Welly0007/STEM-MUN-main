@@ -250,11 +250,9 @@
 
             <ul class="main-nav nav navbar-nav navbar-right">
                 <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">Letter from the Secretary</a></li>
                 <li><a href="index.html#about2">About</a></li>
-                <li><a href="index.html#portfolio">Main objectives</a></li>
-                <li><a href="index.html#pricing">Glimpse from the past</a></li>
-                <li><a href="index.html#Vision">Vision</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="conferences.html">Conferences</a></li>
                 <li><a href="competition.html" style="color: #6195ff;">SPARK</a></li>
                 <li><a href="Team.html">Meet The Board</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -265,11 +263,21 @@
     </header>
     <div class="flex-container">
         <h1>SPARK: STEM-MUN: Student Perspectives and Research Knowledge</h1>
-        <p>We are thrilled to announce the "SPARK: STEM-MUN Student Perspectives and Research Knowledge 2024," the first Egyptian articles
+        <p>
+            We are thrilled to announce the "SPARK: STEM-MUN Student Perspectives and Research Knowledge 2024," the first Egyptian articles
             competition organized by high schoolers. This mind-blowing event
             invites young minds to engage in thoughtful writing and contribute their perspectives on some of
             the most critical issues facing our society today.
-            Don't hesitate to join our fascinating event, and to put your voice to be a part of the change.</p>
+            Don't hesitate to join our fascinating event, and to put your voice to be a part of the change.
+        </p>
+        <p>
+            <bold>Instructions:</bold><br>
+            Word Limit: 350 - 450 <br>
+            Citation Style: IEEE <br>
+            AI is strictly prohibited and leads to immediate elimination <br>
+            You must fill all the fields <br>
+            We strongly recomment to have a copy of your answer to avoid any data loss
+        </p>
     </div>
     <div class="highboard">
     </div>
@@ -282,6 +290,8 @@
         <input type="date" id="Birthdate" name="Birthdate" required class="text"><br><br>
         <label for="Phone">Your Phone:</label>
         <input type="text" id="Phone" name="Phone" required class="text"><br><br>
+        <label for="country">Your Country:</label>
+        <input type="text" id="country" name="country" required class="text"><br><br>
         <label for="school">Your School:</label>
         <input type="text" id="school" name="school" required class="text"><br><br>
         <label for="grade">Your Grade:</label>
@@ -302,11 +312,11 @@
     <script>
         document.querySelector('select').onchange = function (event) {
             if (event.target.value === "Politics") {
-                document.querySelector("#promp").innerHTML = `Today, political issues have a more global presence, and there have been many instances of global organizations failing to solve political conflicts and global crises. In your article, discuss the current strategies employed by these organizations, evaluate their effectiveness, and recommend ways for improvement.`
+                document.querySelector("#promp").innerHTML = `Today, political issues have a more global presence, and there have been many instances of global organizations failing to solve political conflicts and global crises. In your article, discuss the current strategies employed by these organizations, evaluate their effectiveness, and recommend ways for improvement. (350 - 400 Words)`
             } else {
                 document.querySelector("#promp").innerHTML = `Quality education is a privilege not everyone has access to. In your article, discuss the
             challenges in providing quality education for all and explore successful new strategies that address
-            these challenges.`
+            these challenges. (350 - 400 Words)`
             }
 
         }
@@ -316,12 +326,13 @@
             const email = document.querySelector("#email").value;
             const Birthdate = document.querySelector("#Birthdate").value;
             const grade = document.querySelector("#grade").value;
+            const country = document.querySelector("#country").value;
             const school = document.querySelector("#school").value;
             const phone = document.querySelector("#Phone").value;
             const prompt1 = document.querySelector("#prompt1").value;
             const field = document.querySelector("select").value;
             const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdGdXMAcBKxiZC7iwn7nrAA60-qYRc0yxeY945aq8gDliHZbA/formResponse";
-            const formData = { 317679352: field, 1631786627: school, 123620020: name, 1490698635: email, 218283730: phone, 1308134423: grade, 897641835: Birthdate, 2031969761: prompt1 };
+            const formData = { 317679352: field, 1631786627: school, 949328871:country, 123620020: name, 1490698635: email, 218283730: phone, 1308134423: grade, 897641835: Birthdate, 2031969761: prompt1 };
             const data = new URLSearchParams();
             for (const entry in formData) {
                 if (Object.hasOwnProperty.call(formData, entry)) {
@@ -335,7 +346,7 @@
                         "Content-Type": "application/x-www-form-urlencoded",
                     }
                 });
-                alert("message sent successfully")
+                alert("message sent successfully");
             } catch (error) {
                 console.log(error.message);
             }
