@@ -297,21 +297,21 @@
     <div class="highboard">
     </div>
     <form style="margin: 0 20%;">
-        <label for="name">Your Name:</label>
+        <label for="name">Your Name <span style="color: red;">*</span></label>
         <input type="text" id="name" name="name" required class="text"><br><br>
-        <label for="email">Your Email:</label>
+        <label for="email">Your Email <span style="color: red;">*</span></label>
         <input type="email" id="email" name="email" required class="text"><br><br>
-        <label for="Birthdate">Your Birthdate:</label>
+        <label for="Birthdate">Your Birthdate <span style="color: red;">*</span></label>
         <input type="date" id="Birthdate" name="Birthdate" required class="text"><br><br>
-        <label for="Phone">Your Phone (Include your country's code):</label>
+        <label for="Phone">Your Phone (Include your country's code) <span style="color: red;">*</span></label>
         <input type="text" id="Phone" name="Phone" required class="text"><br><br>
-        <label for="country">Your Country:</label>
+        <label for="country">Your Country <span style="color: red;">*</span></label>
         <input type="text" id="country" name="country" required class="text"><br><br>
-        <label for="school">Your School:</label>
+        <label for="school">Your School <span style="color: red;">*</span></label>
         <input type="text" id="school" name="school" required class="text"><br><br>
-        <label for="grade">Your Grade:</label>
+        <label for="grade">Your Grade <span style="color: red;">*</span> </label>
         <input type="text" id="grade" name="grade" required class="text"><br><br>
-        <label for="ambassador">Ambassador Code:</label>
+        <label for="ambassador">Ambassador Code (optional)</label>
         <input type="text" id="ambassador" name="ambassador" class="text"><br><br>
         <select id="Field" name="Field" style="margin-top: 10px">
             <option value="Quality Education">
@@ -322,7 +322,7 @@
         <label id="promp" for="prompt1"> Quality education is a privilege not everyone has access to. In your article,
             discuss the
             challenges in providing quality education for all and explore successful new strategies that address
-            these challenges.</label><br>
+            these challenges. <span style="color: red;">*</span></label><br>
         <textarea id="prompt1" name="prompt1" rows="5" cols="30" required class="text"></textarea><br><br>
         <input type="submit" value="Share Your Voice" class="send">
     </form>
@@ -376,11 +376,11 @@
     <script>
         document.querySelector('select').onchange = function (event) {
             if (event.target.value === "Politics") {
-                document.querySelector("#promp").innerHTML = `Today, political issues have a more global presence, and there have been many instances of global organizations failing to solve political conflicts and global crises. In your article, discuss the current strategies employed by these organizations, evaluate their effectiveness, and recommend ways for improvement. (350 - 450 Words)`
+                document.querySelector("#promp").innerHTML = `Today, political issues have a more global presence, and there have been many instances of global organizations failing to solve political conflicts and global crises. In your article, discuss the current strategies employed by these organizations, evaluate their effectiveness, and recommend ways for improvement. (350 - 450 Words) <span style="color: red;">*</span>`
             } else {
                 document.querySelector("#promp").innerHTML = `Quality education is a privilege not everyone has access to. In your article, discuss the
             challenges in providing quality education for all and explore successful new strategies that address
-            these challenges. (350 - 450 Words)`
+            these challenges. (350 - 450 Words) <span style="color: red;">*</span>`
             }
 
         }
